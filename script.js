@@ -23,7 +23,7 @@ async function foo(){
     try {
     
     var getProduct = document.getElementById("enter").value
-    let products = await fetch (`http://makeup-api.herokuapp.com/api/v1/products.json?brand=${getProduct}`)
+    let products = await fetch (`https://makeup-api.herokuapp.com/api/v1/products.json?brand=${getProduct}`)
     result = await products.json();
     let index = 0;
 
